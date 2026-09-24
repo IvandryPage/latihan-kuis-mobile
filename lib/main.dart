@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:latkuis_mobile/screens/home.dart';
+import 'package:latkuis_mobile/screens/login.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,6 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'Latihan Kuis Mobile', home: HomePage());
+    return const MaterialApp(title: 'Latihan Kuis Mobile', home: LoginPage());
   }
 }

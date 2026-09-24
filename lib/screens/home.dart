@@ -12,6 +12,14 @@ class HomePage extends StatelessWidget {
         title: const Text('Animal List'),
         backgroundColor: Colors.grey[800],
         foregroundColor: Colors.white,
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.popUntil(context, (route) => route.isFirst);
+            },
+            child: const Text('Logout', style: TextStyle(color: Colors.white)),
+          ),
+        ],
       ),
       body: ListView.builder(
         padding: const EdgeInsets.all(16),

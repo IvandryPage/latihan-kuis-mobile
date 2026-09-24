@@ -18,15 +18,7 @@ class AnimalDetailPage extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-        ),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.popUntil(context, (route) => route.isFirst);
-            },
-            child: const Text('Logout', style: TextStyle(color: Colors.white)),
-          ),
-        ],
+        )
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
