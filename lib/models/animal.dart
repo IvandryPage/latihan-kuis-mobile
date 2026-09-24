@@ -1,4 +1,5 @@
 class Animal {
+  // Properties / Attributes
   String name;
   String type;
   double weight;
@@ -7,6 +8,7 @@ class Animal {
   List<String> activities;
   String image;
 
+  // Default Constructor
   Animal({
     required this.name,
     required this.type,
