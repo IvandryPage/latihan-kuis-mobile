@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:latkuis_mobile/models/dummy_data.dart';
 import 'package:latkuis_mobile/screens/animal_detail.dart';
+import 'package:latkuis_mobile/screens/login.dart' show LoginPage;
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -15,7 +16,11 @@ class HomePage extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () {
-              Navigator.popUntil(context, (route) => route.isFirst);
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => LoginPage()),
+                (route) => false,
+              );
             },
             child: const Text('Logout', style: TextStyle(color: Colors.white)),
           ),
