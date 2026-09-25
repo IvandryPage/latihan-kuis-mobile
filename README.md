@@ -8,3 +8,6 @@ Nama : Galang Ivandry
 NIM  : 124240042
 Kelas: Praktikum PAM (SI-B)
 ```
+
+Login Password: 
+```sistem informasi```
